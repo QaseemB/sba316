@@ -116,7 +116,7 @@ work.style.background = "#368f8b";
 work.style.border = "solid 40px #368f8b";
 
 wildTHoughts.setAttribute("class", "row1");
-wildTHoughts.textContent = "Wild THoughts";
+wildTHoughts.textContent = "Wild Thoughts";
 wildTHoughts.style.textAlign = "center"
 wildTHoughts.style.background = "#4a442d";
 wildTHoughts.style.color = "rgb(243, 247, 240)";
@@ -155,6 +155,7 @@ function handleGuess(event) {
     });
 
     if (guess === correctAnswer) {
+        clickedElement.classList.add('correct')
         alert("Correct! " + guess + " is the biggest song.");
     } else {
         clickedElement.classList.add('incorrect')

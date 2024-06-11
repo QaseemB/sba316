@@ -43,8 +43,8 @@ select{
 }
 
 .row1:hover{
-    /* opacity: 0.6; */
-    background-color: #BF8B85 ;
+    opacity: 0.6;
+    /* background: red ; */
 }
 
 .row1:active{
