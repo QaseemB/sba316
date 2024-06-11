@@ -10,6 +10,8 @@ let bio = document.querySelector('.bio');
 
 let form = document.querySelector('form');
 
+let divform = document.querySelector('.form');
+
 let guess = document.querySelector('.guess');
 
 let h1 = document.createElement('h1');
@@ -61,7 +63,11 @@ bio.appendChild(section3)
 
 
 
-
+const pForm = document.createElement('p')
+pForm.textContent = "Sign Up For Updates About PND"
+pForm.style.textAlign = "center"
+pForm.style.color = "rgb(243, 247, 240)"
+divform.insertBefore(pForm,form)
 
 const name = form.elements["name"];
 const email = form.elements["email"];
