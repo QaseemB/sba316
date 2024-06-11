@@ -65,7 +65,8 @@ bio.appendChild(section3)
 
 const pForm = document.createElement('p')
 pForm.textContent = "Sign Up For Updates About PND"
-pForm.style.textAlign = "center"
+// pForm.style.textAlign = "center"
+pForm.style.marginLeft = "20%"
 pForm.style.color = "rgb(243, 247, 240)"
 divform.insertBefore(pForm,form)
 
