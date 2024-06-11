@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sba.css">
+    <!-- <script defer src="./sba.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="testbutton">changed color</button> -->
+    <div id="app">
+
+        <div class="bio"></div>
+        <div class="form">
+            <form
+            action="javascript: alert('Thank you');"
+            name="myForm"
+            method="POST"
+            id="form">
+            <input type="text" name="firstName" placeholder="FirstName" />
+            <input type="text" name="lastName" placeholder="LastName" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="zip" placeholder="Zip Code" />
+            <select name="city">
+              <option value="">Select City</option>
+              <option value="Nyc">NYC</option>
+              <option value="Toronto">Toronto</option>
+              <option value="Houston">Houston</option>
+              <option value="LA">LA</option>
+              <option value="ATL">ATL</option>
+              <option value="DC">DC</option>
+            </select>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="guess"></div>
+
+    </div>
+    <script src="sba.js"></script>
+</body>
+</html> 

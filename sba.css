@@ -1,0 +1,41 @@
+
+h1{
+    display: block;
+}
+#app{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 15%;
+    /* flex: 1 1 20%; */
+}
+
+#app div{
+    flex: 0 0 40%; 
+    min-width: 20%;
+
+}
+
+#app div:nth-child(3){
+   flex: 0 0 100%;
+   min-width: 100%;
+   min-height: 80%;
+}
+input{
+    display: block;
+    margin-top: 30px ;
+    margin-left: 20%;
+    min-width: 40%;
+    max-width: 60%;
+}
+select{
+    margin-top: 30px ;
+    margin-left: 20%;
+    min-width: 40%;
+    max-width: 60%;
+}
+.container{
+    display: block;
+}
