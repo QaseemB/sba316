@@ -31,7 +31,7 @@ h1.style.border = "solid 5px #bc6c25";
 h1.style.backgroundColor = "#bc6c25";
 body.insertBefore(h1, app);
 
-bioheader.textContent = "who is PND and how he changed Rnb"
+bioheader.textContent = "who is PND and how he has changed Rnb"
 bioheader.style.textAlign = "center"
 bioheader.style.color = "rgb(243, 247, 240)"
 bio.insertBefore(bioheader,section1.nextSibling)
@@ -111,9 +111,9 @@ const GhostTown = document.createElement("div");
 work.setAttribute("class", "row1");
 work.textContent = "work";
 work.style.textAlign = "center"
-work.style.color = "rgb(243, 247, 240)";
+// work.style.color = "rgb(243, 247, 240)";
 work.style.background = "#368f8b";
-work.style.border = "solid 40px #368f8b";
+work.style.border = "solid 40px transparent";
 
 wildTHoughts.setAttribute("class", "row1");
 wildTHoughts.textContent = "Wild Thoughts";
@@ -135,11 +135,18 @@ container1.appendChild(work);
 container1.appendChild(wildTHoughts);
 container1.appendChild(GhostTown);
 // container1.style.display = "flex";
-container1.style.gap = "100px";
+// container1.style.gap = "100px";
 const Pickone = document.createElement("h2")
-Pickone.textContent = "Guess the biggest song hes Written"
+const pGuess = document.createElement('p')
+pGuess.textContent = "click the correct answer"
+pGuess.style.color = "rgb(243, 247, 240)";
+pGuess.style.textAlign ="center"
+Pickone.textContent = "Guess the Biggest Song He's Written"
+Pickone.style.color = "rgb(243, 247, 240)";
 Pickone.style.textAlign ="center"
 guess.appendChild(Pickone)
+guess.appendChild(pGuess)
+
 // guess.style.flex
 // guess.style.border = "5px black solid"
 guess.style.height = "50%"
