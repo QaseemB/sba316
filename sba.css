@@ -37,5 +37,21 @@ select{
     max-width: 60%;
 }
 .container{
-    display: block;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.row1:hover{
+    /* opacity: 0.6; */
+    background-color: #BF8B85 ;
+}
+
+.row1:active{
+    transform: scale(.8);
+}
+
+.correct{
+    background: green;
+    border-color: green;
 }

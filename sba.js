@@ -150,9 +150,14 @@ function handleGuess(event) {
     const clickedElement = event.target;
     const guess = clickedElement.textContent;
 
+    document.querySelectorAll('.row1').forEach(div => {
+        div.classList.remove('correct', 'incorrect');
+    });
+
     if (guess === correctAnswer) {
         alert("Correct! " + guess + " is the biggest song.");
     } else {
+        clickedElement.classList.add('incorrect')
         alert("Incorrect. Try again!");
     }
 }
